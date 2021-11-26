@@ -46,27 +46,7 @@ loader.load( './models/scene.gltf',
 camera.position.z = 10;
 camera.position.y = 2;
 
-function onWindowResize() {
 
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-
-  renderer.setSize( window.innerWidth, window.innerHeight );
-}
-
-function animate() {
-  //cube.rotation.x += 0.01;
-  //cube.rotation.y += 0.01;
-    // requestAnimationFrame( animate );
-    // renderer.render( scene, camera );
-
-  renderer.setAnimationLoop( render );
-}
-
-function render() {
-  renderer.render(scene, camera);
-}
-animate();
 
 function animate() {
   //cube.rotation.x += 0.01;
@@ -74,3 +54,4 @@ function animate() {
 	requestAnimationFrame( animate );
 	renderer.render( scene, camera );
 }
+animate();
