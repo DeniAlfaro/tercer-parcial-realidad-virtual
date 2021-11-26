@@ -43,8 +43,8 @@ loader.load( './models/scene.gltf',
 
 });
 
-camera.position.z = 10;
-camera.position.y = 2;
+camera.position.z = 50;
+camera.position.y = 60;
 
 function onWindowResize() {
 
