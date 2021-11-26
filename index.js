@@ -43,8 +43,8 @@ loader.load( './models/scene.gltf',
 
 });
 
-camera.position.z = 50;
-camera.position.y = 60;
+camera.position.z = 10;
+camera.position.y = 2;
 
 function onWindowResize() {
 
@@ -74,4 +74,3 @@ function animate() {
 	requestAnimationFrame( animate );
 	renderer.render( scene, camera );
 }
-animate();
